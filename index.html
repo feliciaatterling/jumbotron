@@ -74,7 +74,7 @@
         justify-content: center;
       }
       .sponsors img {
-        height: 50px;
+        height: 90px;
         flex-shrink: 0;
       }
       /* RIGHT SECTION */
@@ -87,10 +87,10 @@
         padding: 8px;
       }
       .qr-title {
-        font-size: 12px;
-        font-weight: 500;
+        font-size: 10px;
+        font-weight: 400;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 30px;
       }
       .qr {
         width: 110px;
@@ -130,8 +130,8 @@
           </div>
 
           <div class="sponsors">
-            <img src="ICAMaxi-logo.png" alt="Sponsor 1" />
-            <img src="sparbanken-logo.jpg" alt="Sponsor 2" />
+            <img src="Maxi-logo.png" alt="Sponsor 1" />
+            <img src="SB-logo.png" alt="Sponsor 2" />
           </div>
         </div>
 
@@ -158,6 +158,7 @@
             body: JSON.stringify({
               clubId: "alingsashk",
               withPrizeDetails: true,
+              relative: "next",
             }),
           });
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
