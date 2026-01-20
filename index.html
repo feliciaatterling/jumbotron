@@ -45,8 +45,8 @@
         gap: 10px;
       }
       .home-logo {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         flex-shrink: 0;
       }
       .title-group {
@@ -56,9 +56,9 @@
       }
       .title {
         font-size: 18px;
-        font-weight: 900;
+        font-weight: 800;
         letter-spacing: 0.5px;
-        line-height: 1;
+        line-height: 1.2;
       }
       .subtitle {
         font-size: 12px;
@@ -77,30 +77,11 @@
         height: 90px;
         flex-shrink: 0;
       }
-      /* RIGHT SECTION */
-      .right {
-        display: flex;
-        height: 175px;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px;
-      }
-      .qr-title {
-        font-size: 10px;
-        font-weight: 400;
-        text-align: center;
-        padding-top: 30px;
-      }
-      .qr {
-        width: 120px;
-        height: 120px;
-      }
-      /* BOTTOM - Prize Section */
       .bottom {
         text-align: center;
         padding: 8px 0 0 0;
       }
+
       .prize-label {
         font-size: 11px;
         margin-bottom: 2px;
@@ -113,6 +94,27 @@
         letter-spacing: 1px;
         line-height: 1;
       }
+      /* RIGHT SECTION */
+      .right {
+        display: flex;
+        height: 175px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .qr-title {
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .qr {
+        width: 200px;
+        height: 200px;
+        padding-top: 10px;
+      }
+      /* BOTTOM - Prize Section */
     </style>
   </head>
   <body>
@@ -125,13 +127,19 @@
             <img src="AHK-logo.png" class="home-logo" alt="AHK Logo" />
             <div class="title-group">
               <div class="title">50/50-LOTTEN</div>
-              <div class="subtitle">Stötta AHK – vinn!</div>
+              <div class="subtitle">Stötta AHK!</div>
             </div>
           </div>
 
           <div class="sponsors">
             <img src="maxi.png" alt="Sponsor 1" />
             <img src="sparbanken.png" alt="Sponsor 2" />
+          </div>
+
+          <!-- BOTTOM -->
+          <div class="bottom">
+            <div class="prize-label">Aktuell vinstsumma</div>
+            <div class="prize-amount" id="amount">-- kr</div>
           </div>
         </div>
 
@@ -140,12 +148,6 @@
           <div class="qr-title">Scanna och köp din lott!</div>
           <img src="qr-code.png" class="qr" alt="QR Code" />
         </div>
-      </div>
-
-      <!-- BOTTOM -->
-      <div class="bottom">
-        <div class="prize-label">Aktuell vinstsumma</div>
-        <div class="prize-amount" id="amount">-- kr</div>
       </div>
     </div>
 
